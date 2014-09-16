@@ -80,6 +80,17 @@
 
 
   /**
+   * Utility method for setting resrc options. Merges over the top of any current values
+   * @param newOptions {object} - New options to merge with current ones
+   * @returns {object}
+   */
+  var extendResrcOptions = function(newOptions){
+    mergeObject(options,newOptions);
+    return resrc;
+  };
+
+
+  /**
    * Cross browser implementation of getElementsByClassName.
    * It may not be present in all browsers.
    * For example: Internet Explorer < 9.
@@ -166,7 +177,8 @@
     var searchVal;
     var index;
     var res;
-    imgPath = parseUri(url).url ? parseUri(url).path + "?" + parseUri(url).query : parseUri(url).path;
+    var parsedUri = parseUri(url);
+    imgPath = parsedUri.url ? parsedUri.path + "?" + parsedUri.query : parsedUri.path;
     searchVal = /(https?):|(\/\/)/;
     index = imgPath.search(searchVal);
     res = imgPath.substring(index);
@@ -216,7 +228,8 @@
    */
   var parseSrcToUniformFormat = function (src, server) {
     if (src.match(/\/\//g).length > 1) {
-      return parseUri(src).authority !== server ? src.replace(parseUri(src).protocol + "://" + parseUri(src).authority, getProtocol(options.ssl) + server) : src;
+      var parsedUri = parseUri(src);
+      return parsedUri.authority !== server ? src.replace(parsedUri.protocol + "://" + parsedUri.authority, getProtocol(options.ssl) + server) : src;
     }
     return getProtocol(options.ssl) + server + "/" + src;
   };
@@ -790,10 +803,11 @@
    * Expose various private functions as public methods.
    */
   resrc.ready = domReady;
-  resrc.resrc = initResrc;
+  resrc.run = initResrc;
   resrc.getResrcImageObject = getResrcImageObject;
   resrc.getElementsByClassName = getElementsByClassName;
   resrc.options = options;
   resrc.extend = mergeObject;
+  resrc.configure = extendResrcOptions;
 
 }(window.resrc = window.resrc || {}));

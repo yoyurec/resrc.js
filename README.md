@@ -1,4 +1,4 @@
-[resrc.js](http://www.resrc.it/docs/javascript/0.8) - Responsive Image Library
+[resrc.js](http://www.resrc.it/docs/javascript/0.9) - Responsive Image Library
 ==========================================================================
 
 resrc.js is a small, mobile friendly *(1.5kb in file size - Minified and Gzipped)* responsive image JavaScript library that produces pixel perfect images on demand.
@@ -27,7 +27,7 @@ We have made sure it works on **Internet Explorer 6** and above.
 ![Browser Support](http://www.resrc.it/img/github/browser-icons.png)
 
 ## Demos ##
-[Simple](http://jsfiddle.net/ru38r9pc) | [Custom Options](http://jsfiddle.net/z9o6s86q) | [Preview approach (aka: Mobile First)](http://jsfiddle.net/mohtpac9) | [Art Direction](http://jsfiddle.net/afth40cy)
+[Simple](http://jsfiddle.net/tpq17026) | [Custom Options](http://jsfiddle.net/sgqfrfus) | [Preview approach (aka: Mobile First)](http://jsfiddle.net/jtv1u9j9) | [Art Direction](http://jsfiddle.net/enobsrm0)
 
 ## Examples ##
 [Simple](https://github.com/resrcit/resrc.js/blob/master/examples/simple.html) | [CSS Background](https://github.com/resrcit/resrc.js/blob/master/examples/css-background.html) | [Preview approach (aka: Mobile First)](https://github.com/resrcit/resrc.js/blob/master/examples/preview-mobilefirst.html) 
@@ -36,13 +36,13 @@ We have made sure it works on **Internet Explorer 6** and above.
 
 resrc.js supports plugins so you can add any additional functionality you may require. [Learn More](https://github.com/resrcit/resrc.plugin-boilerplate.js)
 
-## Latest Release: 0.8.0
+## Latest Release: 0.9.0
 
 For a full list of releases and changes please see the [CHANGELOG](https://github.com/resrcit/resrc.js/blob/master/CHANGELOG.md).
 
 ## Documentation
 
-Please see [DOCUMENTATION](http://www.resrc.it/docs/javascript/0.8).
+Please see [DOCUMENTATION](http://www.resrc.it/docs/javascript/0.9).
 
 ## Tests
 

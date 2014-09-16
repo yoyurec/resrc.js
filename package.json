@@ -2,7 +2,7 @@
   "name" : "resrc.js",
   "description" : "A JavaScript library for pixel perfect images on demand.",
   "homepage" : "https://github.com/resrcit/resrc.js/",
-  "version" : "0.8.0",
+  "version" : "0.9.0",
   "author" : "ReSRC (https://github.com/resrcit)",
   "license" : "GPL-2.0",
   "repository" : {

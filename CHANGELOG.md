@@ -1,4 +1,14 @@
-## Latest Release: 0.8.0
+## Latest Release: 0.9.0
+
+* Removed redundant multiple calls to parseUri. 
+* Added resrc.configure() as a public method. 
+* resrc.configure() is a utility method for quick options setting.
+* resrc.configure() can be chained as it returns the resrc object.
+* Renamed resrc.resrc() to resrc.run(). Made sense for nicer readable code.
+
+Hat Tip to [Alan Pich](https://github.com/alanpich) for his time and effort towards this release.
+
+## 0.8.0
 
 * First open source release. 
 

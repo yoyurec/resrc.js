@@ -16,22 +16,21 @@
     }
   </style>
   <!-- 1. Load the resrc.js library -->
-  <script src="//use.resrc.it/0.8"></script>
-  <!-- 2. On DOM Ready, Execute resrc -->
+  <script src="//use.resrc.it/0.9"></script>
+  <!-- 2. On DOM ready, configure for "Trial" use and set some options, then run resrc -->
   <script>
     resrc.ready(function () {
       /**
-       * Set some custom options
-       * See: http://www.resrc.it/docs/javascript/0.8#options
+       * Configure some options
+       * See: http://www.resrc.it/docs/javascript/0.9#options
        */
-      var defaults = {
+      resrc.configure({
+        server:"trial.resrc.it",
         resrcOnResizeDown : true,
         resrcOnPinch : true,
         imageQuality : 100,
         pixelRounding : 1
-      };
-      resrc.options = resrc.extend(resrc.options, defaults);
-      resrc.resrc();
+      }).run();
     });
   </script>
 </head>
