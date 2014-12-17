@@ -403,7 +403,7 @@
    * @returns {string}
    */
   var getImgSrc = function (elem) {
-    return elem.getAttribute("resrc") || elem.getAttribute("data-src") || elem.getAttribute("src");
+    return elem.getAttribute("data-src") || elem.getAttribute("src");
   };
 
 

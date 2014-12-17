@@ -1,3 +1,5 @@
+![ReSRC Logo](http://app.resrc.it/s=w120/C=L10,T40,R5,B35//www.resrc.it/img/favicon-144.png)
+
 [resrc.js](http://www.resrc.it/docs/javascript/0.9) - Responsive Image Library
 ==========================================================================
 
@@ -36,7 +38,7 @@ We have made sure it works on **Internet Explorer 6** and above.
 
 resrc.js supports plugins so you can add any additional functionality you may require. [Learn More](https://github.com/resrcit/resrc.plugin-boilerplate.js)
 
-## Latest Release: 0.9.0
+## Latest Release: 0.9.1
 
 For a full list of releases and changes please see the [CHANGELOG](https://github.com/resrcit/resrc.js/blob/master/CHANGELOG.md).
 
