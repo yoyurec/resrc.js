@@ -1,4 +1,8 @@
-## Latest Release: 0.9.0
+## Latest Release: 0.9.1
+
+* Removed getAttribute("resrc") from the getImgSrc() function. This was causing an error in Internet Explorer 8 and below.
+
+## 0.9.0
 
 * Removed redundant multiple calls to parseUri. 
 * Added resrc.configure() as a public method. 
